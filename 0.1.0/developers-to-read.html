@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="keywords" content="react,react-dom-position,dom-position-react,dom-position,React custom style">
+<meta name="description" content="Developers to read">
+<title>Developers to read</title>
+<link rel="stylesheet" type="text/css" href="/dom-position/0.1.0/example/_doc/document.css" />
+<!-- Polyfills --><!-- console-polyfill es5-shim es5-shim/es5-sham es6-shim es6-shim/es6-sham html5shiv media-match -->
+<!--[if lt IE 10]>
+<script src="/dom-position/0.1.0/example/_doc/polyfill-lt-ie10.js"></script>
+<![endif]--><!-- es6-shim es6-shim/es6-sham-->
+<!--[if lte IE 11]>
+<script src="/dom-position/0.1.0/example/_doc/polyfill-lte-ie11.js"></script>
+<![endif]-->
+<script src="/dom-position/0.1.0/example/_doc/es6-promise.auto.js"></script>
+</head>
+<body>
+<div class="markdown-header">
+<a class="markdown-header-logo" href="/dom-position/0.1.0/index.html">
+<img class="markdown-header-logo-photo"  src="/dom-position/0.1.0/example/_doc/logo.png" />
+<span class="markdown-header-logo-text">dom-position</span>
+</a>
+<ul class="markdown-header-nav" >
+<li>
+<a href="/dom-position/0.1.0/doc/index.html" class="markdown-header-nav-link">Document</a>
+</li>
+<li>
+<a href="/dom-position/0.1.0/example/index.html" class="markdown-header-nav-link">Example</a>
+</li>
+<li>
+<a href="https://github.com/onface/dom-position/issues" class="markdown-header-nav-link">Community</a>
+</li>
+</ul>
+</div>
+<div class="markdown-sidebar" id="markrun-sidebar">
+<h3 id="markrunCurrentPageTitle"></h3>
+</div>
+<div class="markdown-content">
+<div class="markdown-body" id="markrun-body" >
+<h1 id="Developers to read" ><a class="markrun-anchor" href="#Developers to read"><span class="markrun-anchor-link"></span></a>Developers to read</h1><p><a href="http://github.com/onface/react">http://github.com/onface/react</a></p>
+<h2 id="Install" ><a class="markrun-anchor" href="#Install"><span class="markrun-anchor-link"></span></a>Install</h2><pre><code class="lang-shell"><span class="hljs-selector-tag">yarn</span> <span class="hljs-selector-tag">global</span> <span class="hljs-selector-tag">add</span> <span class="hljs-selector-tag">fis3</span> <span class="hljs-selector-tag">nodemon</span> <span class="hljs-selector-tag">webpack</span>@<span class="hljs-keyword">1</span>.<span class="hljs-keyword">13</span>.<span class="hljs-keyword">2</span>
+</code></pre>
+<h2 id="Development" ><a class="markrun-anchor" href="#Development"><span class="markrun-anchor-link"></span></a>Development</h2><pre><code class="lang-shell">npm <span class="hljs-keyword">run</span><span class="bash"> dev
+</span><span class="hljs-comment"># or npm run dev:debug</span>
+npm <span class="hljs-keyword">run</span><span class="bash"> js
+</span><span class="hljs-comment"># npm run js:debug</span>
+</code></pre>
+<h2 id="dev-config.js" ><a class="markrun-anchor" href="#dev-config.js"><span class="markrun-anchor-link"></span></a>dev-config.js</h2><p>Read <code>./dev-config.js</code></p>
+<h2 id="Test" ><a class="markrun-anchor" href="#Test"><span class="markrun-anchor-link"></span></a>Test</h2><pre><code class="lang-shell">npm <span class="hljs-keyword">run</span><span class="bash"> <span class="hljs-built_in">test</span>
+</span>files=test/required.test.js npm <span class="hljs-keyword">run</span><span class="bash"> <span class="hljs-built_in">test</span>
+</span>npm <span class="hljs-keyword">run</span><span class="bash"> <span class="hljs-built_in">test</span>:ci
+</span>SAUCE_USERNAME=**** SAUCE_ACCESS_KEY=********-****-****-****-******** npm <span class="hljs-keyword">run</span><span class="bash"> <span class="hljs-built_in">test</span>:ci</span>
+</code></pre>
+<h2 id="Release" ><a class="markrun-anchor" href="#Release"><span class="markrun-anchor-link"></span></a>Release</h2><blockquote>
+<p>Please use Travis build the job, and then released</p>
+</blockquote>
+<pre><code class="lang-shell"><span class="hljs-meta"># git push gh-pages  &amp; npm publish</span>
+npm <span class="hljs-built_in">run</span> <span class="hljs-built_in">release</span>
+</code></pre>
+<h2 id="Publish gh-pages" ><a class="markrun-anchor" href="#Publish gh-pages"><span class="markrun-anchor-link"></span></a>Publish gh-pages</h2><pre><code class="lang-shell">npm <span class="hljs-keyword">run</span><span class="bash"> gh
+</span>npm <span class="hljs-keyword">run</span><span class="bash"> s
+</span>npm <span class="hljs-keyword">run</span><span class="bash"> gh-push</span>
+</code></pre>
+<h2 id="Publish npm" ><a class="markrun-anchor" href="#Publish npm"><span class="markrun-anchor-link"></span></a>Publish npm</h2><pre><code class="lang-shell"><span class="hljs-built_in">npm</span> run <span class="hljs-built_in">npm</span>
+cd output &amp;&amp; <span class="hljs-built_in">npm</span> publish
+</code></pre>
+<h2 id="Automated Builds" ><a class="markrun-anchor" href="#Automated Builds"><span class="markrun-anchor-link"></span></a>Automated Builds</h2><p>You can use travis &amp; saucelabs test your code.</p>
+<h3 id="Travis environment Variables" ><a class="markrun-anchor" href="#Travis environment Variables"><span class="markrun-anchor-link"></span></a>Travis environment Variables</h3><p><a href="https://travis-ci.org/">travis</a></p>
+<p><img src="https://cloud.githubusercontent.com/assets/3949015/23390555/dafcf4ee-fda9-11e6-931a-8f4de5d0973b.png" alt=""></p>
+<h2 id="SAUCE_USERNAME &amp; SAUCE_ACCESS_KEY" ><a class="markrun-anchor" href="#SAUCE_USERNAME &amp; SAUCE_ACCESS_KEY"><span class="markrun-anchor-link"></span></a>SAUCE_USERNAME &amp; SAUCE_ACCESS_KEY</h2><p><a href="https://saucelabs.com/beta/signup/OSS/None">Saucelabs signup OSS</a></p>
+<p><img src="https://cloud.githubusercontent.com/assets/3949015/23390554/daf8a9e8-fda9-11e6-9de8-a796e2a89226.png" alt=""></p></div>
+</div>
+<div class="markdown-footer" ></div>
+<a href="https://github.com/onface/dom-position" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#67d2f1; color:#fff; position: absolute; top: 0; border: 0; right: 0;z-index:10;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<script src="/dom-position/0.1.0/example/dev.js?version=0.1.0" ></script>
+<script src="/dom-position/0.1.0/example/_doc/document.js"></script>
+<script>
+if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+var script = document.createElement('script');
+script.src="http://eruda.liriliri.io/eruda.min.js";
+document.body.appendChild(script);
+script.onload = function () { eruda.init() }
+}
+</script>
+</body>
+</html>
