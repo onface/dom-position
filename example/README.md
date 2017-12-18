@@ -20,7 +20,8 @@
 }
 .el {
     width:20px;height:20px;background-color:purple;
-    transition: left top .3s;
+    /* useCssTransform */
+    transition: transform .3s;
 }
 .options{font-size:12px;height:8em;width:20em;}
 ````
@@ -52,3 +53,20 @@
     file: './basic.demo.js'
 }
 ````
+
+## defaultProps
+
+````demo
+{
+    title: '',
+    html: '',
+    desc: '',
+    file: '../lib/defaultProps.js'
+}
+````
+
+
+## 注意事项
+
+`dom-position` 并没有监听窗口改变或dom改变时改变位置,如果你有这样的需求,请自行监听
+`onresize` .遇到极端情况需要定时定位时一定要使用 `requestAnimFrame`

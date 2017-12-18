@@ -16,7 +16,7 @@ npm install dom-position --save
 
 ## Example
 
-[![Preview](./example/preview.png)](http://onface.github.io/dom-position/example)
+[![Preview](./example/preview.gif)](http://onface.github.io/dom-position/example)
 
 ## Online documentation
 
@@ -40,4 +40,3 @@ npm install dom-position --save
     <tr>
   <tbody>
 </table>
-
