@@ -32,6 +32,7 @@ fis.match('{config/**,npm-debug.log,yarn.lock,__test__/**}', {
     release: false
 })
 fis.match('example/_doc/**.**', {release: true})
+fis.match('example/**/_doc/**.**', {release: true})
 if (fis.project.currentMedia() === 'npm') {
     fis.match('**.js', {
         parser: [
