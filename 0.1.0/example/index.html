@@ -93,7 +93,7 @@
 <div class="markrun markrun--html">
 <div class="markrun-html"></div>
 <div class="markrun-code">
-<div class="wrap">
+<div class="wrap" id="wrap1" >
     <div class="targetWrap">
         <br />
         <div id="target1" class="target"  ></div>    
@@ -110,7 +110,7 @@
 <button type="submit" >Set</button>
 </form></div>
 <div class="markrun-source">
-<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"wrap"</span>&gt;
+<pre><code class="lang-html">&lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"wrap"</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"wrap1"</span> &gt;
     &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"targetWrap"</span>&gt;
         &lt;br /&gt;
         &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">id</span>=<span class="hljs-string">"target1"</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"target"</span>  &gt;&lt;/<span class="hljs-keyword">div</span>&gt;    
@@ -147,6 +147,9 @@ domPos({
     <span class="hljs-attr">target</span>: <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'target1'</span>)
 })
 
+
+
+
 <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'set'</span>).addEventListener(<span class="hljs-string">'submit'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">e</span>) </span>{
     e.preventDefault()
     <span class="hljs-keyword">var</span> json = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'options'</span>).value
@@ -160,6 +163,18 @@ domPos({
         <span class="hljs-keyword">return</span> position
     }
     domPos(options)
+})
+
+<span class="hljs-keyword">var</span> box = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">'div'</span>)
+box.style.width = <span class="hljs-string">'20px'</span>
+box.style.height = <span class="hljs-string">'20px'</span>
+box.style.backgroundColor = <span class="hljs-string">'orange'</span>
+<span class="hljs-built_in">document</span>.body.appendChild(box)
+
+<span class="hljs-built_in">console</span>.log(box)
+domPos({
+    <span class="hljs-attr">el</span>: box,
+    <span class="hljs-attr">target</span>: <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">'wrap1'</span>)
 })
 </pre>
        </div>
