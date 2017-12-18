@@ -27,7 +27,7 @@
 ````
 
 ````html
-<div class="wrap">
+<div class="wrap" id="wrap1" >
     <div class="targetWrap">
         <br />
         <div id="target1" class="target"  ></div>    
