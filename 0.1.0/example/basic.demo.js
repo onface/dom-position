@@ -29,7 +29,6 @@ box.style.height = '20px'
 box.style.backgroundColor = 'orange'
 document.body.appendChild(box)
 
-console.log(box)
 domPos({
     el: box,
     target: document.getElementById('wrap1')
