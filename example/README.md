@@ -9,9 +9,10 @@
     border:1px solid #ABCDEF;
     border-width: 1px 2px 3px 4px;
     position:relative;
+    overflow-y: auto;
 }
 .targetWrap {
-    padding:20px;position:relative;
+    padding:50px;position:relative;
 }
 .target {
     width:100px;height:100px;background-color:skyblue;
@@ -31,6 +32,7 @@
     <div class="targetWrap">
         <br />
         <div id="target1" class="target"  ></div>    
+        <div style="width:600px;height:600px;overflow:hidded;background-color:rgba(1,1,1,.1);" ></div>
     </div>
     <div id="el1" class="el" ></div>
 </div>

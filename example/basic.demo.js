@@ -15,7 +15,7 @@ document.getElementById('set').addEventListener('submit', function (e) {
     options.el = document.getElementById('el1')
     options.target = document.getElementById('target1')
     options.useCssTransform = true
-    options.onAlign = function onAlign (position, el) {
+    options.onAlign = function onAlign (position, el, target, offsetParent) {
         console.log(position)
         // position.left = position.left + 10
         return position
